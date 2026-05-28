@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
 
 const EMAIL = "tyagiy64@gmail.com";
 const LINKEDIN = "https://www.linkedin.com/in/yash-tyagi-91845337a";
-const GITHUB = "https://github.com/";
+const GITHUB = "https://github.com/BotYash013";
 
 const NAV = [
   { label: "Work", count: 2, href: "#projects" },
