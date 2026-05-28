@@ -72,14 +72,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Yash Tyagi | Data Analyst Portfolio - Meerut, India" },
+      { name: "description", content: "Turning raw data into decisions - Power BI, SQL & Python | B.Tech Final Year | Open to Work" },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Yash Tyagi | Data Analyst Portfolio - Meerut, India" },
+      { property: "og:description", content: "Turning raw data into decisions - Power BI, SQL & Python | B.Tech Final Year | Open to Work" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Yash Tyagi | Data Analyst Portfolio - Meerut, India" },
+      { name: "twitter:description", content: "Turning raw data into decisions - Power BI, SQL & Python | B.Tech Final Year | Open to Work" },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/XD1NQ0n3o9R67yZ6HDbG4bLJHVH3/social-images/social-1779962525554-Yash_Tyagi-_Passport_size_photo_(1).webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/XD1NQ0n3o9R67yZ6HDbG4bLJHVH3/social-images/social-1779962525554-Yash_Tyagi-_Passport_size_photo_(1).webp" },
     ],
     links: [
       {
