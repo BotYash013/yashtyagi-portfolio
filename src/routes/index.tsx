@@ -281,6 +281,9 @@ function Hero() {
             <a href={GITHUB} target="_blank" rel="noreferrer" className="pill">
               <Github className="h-4 w-4" /> GitHub
             </a>
+            <a href={`mailto:${EMAIL}`} className="pill">
+              <Mail className="h-4 w-4" /> Gmail
+            </a>
           </div>
         </div>
       </div>
