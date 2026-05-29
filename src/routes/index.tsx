@@ -67,7 +67,7 @@ const SKILLS: { category: string; items: string[] }[] = [
 type Project = {
   title: string;
   period: string;
-  type: "BI Dashboard" | "Data Analysis";
+  type: "BI Dashboard" | "Data Analysis" | "AI-Powered BI Dashboard";
   description: string;
   tags: string[];
   image: string;
