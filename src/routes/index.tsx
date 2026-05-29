@@ -39,7 +39,7 @@ const LINKEDIN = "https://www.linkedin.com/in/yash-tyagi-91845337a";
 const GITHUB = "https://github.com/BotYash013";
 
 const NAV = [
-  { label: "Work", count: 3, href: "#projects" },
+  { label: "Work", count: 1, href: "#projects" },
   { label: "Skills", count: 5, href: "#skills" },
   { label: "Experience", count: 1, href: "#experience" },
   { label: "Contact", href: "#contact" },
