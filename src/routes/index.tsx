@@ -10,8 +10,6 @@ import {
   Mail,
 } from "lucide-react";
 import cloudsBg from "@/assets/clouds-bg.jpg";
-import projectPowerbi from "@/assets/project-powerbi.jpg";
-import projectPython from "@/assets/project-python.jpg";
 import projectDarkStore from "@/assets/dark-store-dashboard.png";
 
 export const Route = createFileRoute("/")({
@@ -41,7 +39,7 @@ const LINKEDIN = "https://www.linkedin.com/in/yash-tyagi-91845337a";
 const GITHUB = "https://github.com/BotYash013";
 
 const NAV = [
-  { label: "Work", count: 3, href: "#projects" },
+  { label: "Work", count: 1, href: "#projects" },
   { label: "Skills", count: 5, href: "#skills" },
   { label: "Experience", count: 1, href: "#experience" },
   { label: "Contact", href: "#contact" },
@@ -84,26 +82,6 @@ const PROJECTS: Project[] = [
     tags: ["SQL", "MySQL", "Power BI", "Excel", "ChatGPT"],
     image: projectDarkStore,
     link: "https://github.com/BotYash013/AI-Powered-Dark-Store-Demand-Intelligence-System",
-  },
-  {
-    title: "Sales Performance Dashboard",
-    period: "Jan 2026 — Mar 2026",
-    type: "BI Dashboard",
-    description:
-      "End-to-end Power BI dashboard analysing retail sales across regions and product categories. Connected to MySQL with SQL queries processing 10,000+ rows.",
-    tags: ["Power BI", "SQL", "MySQL", "Dashboard"],
-    image: projectPowerbi,
-    link: GITHUB,
-  },
-  {
-    title: "Student Performance Analysis",
-    period: "Aug 2025 — Dec 2025",
-    type: "Data Analysis",
-    description:
-      "Cleaned and analysed 500+ student records with Python (pandas). EDA surfaced patterns in attendance, grades and departmental performance.",
-    tags: ["Python", "pandas", "Excel", "EDA"],
-    image: projectPython,
-    link: GITHUB,
   },
 ];
 
@@ -361,9 +339,6 @@ function Skills() {
 
 /* -------------------- PROJECTS -------------------- */
 function Projects() {
-  const [filter, setFilter] = useState<"All" | "Data Analysis" | "BI Dashboard">("All");
-  const filtered = PROJECTS.filter((p) => filter === "All" || p.type === filter);
-
   return (
     <section id="projects" className="py-16">
       <div className="card-soft p-6 sm:p-10 relative overflow-hidden">
@@ -374,22 +349,7 @@ function Projects() {
           <h2 className="section-label relative text-center">/SELECTED WORK</h2>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex gap-2 font-mono text-sm">
-            {(["All", "Data Analysis", "BI Dashboard"] as const).map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`px-3 py-1.5 rounded-full transition-colors ${
-                  filter === f
-                    ? "bg-[color:var(--color-ink)] text-white"
-                    : "hover:bg-black/5"
-                }`}
-              >
-                {f}
-              </button>
-            ))}
-          </div>
+        <div className="mt-10 flex justify-end">
           <a
             href={GITHUB}
             target="_blank"
@@ -401,7 +361,7 @@ function Projects() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filtered.map((p) => (
+          {PROJECTS.map((p) => (
             <a
               key={p.title}
               href={p.link}
