@@ -10,8 +10,6 @@ import {
   Mail,
 } from "lucide-react";
 import cloudsBg from "@/assets/clouds-bg.jpg";
-import projectPowerbi from "@/assets/project-powerbi.jpg";
-import projectPython from "@/assets/project-python.jpg";
 import projectDarkStore from "@/assets/dark-store-dashboard.png";
 
 export const Route = createFileRoute("/")({
