@@ -83,26 +83,6 @@ const PROJECTS: Project[] = [
     image: projectDarkStore,
     link: "https://github.com/BotYash013/AI-Powered-Dark-Store-Demand-Intelligence-System",
   },
-  {
-    title: "Sales Performance Dashboard",
-    period: "Jan 2026 — Mar 2026",
-    type: "BI Dashboard",
-    description:
-      "End-to-end Power BI dashboard analysing retail sales across regions and product categories. Connected to MySQL with SQL queries processing 10,000+ rows.",
-    tags: ["Power BI", "SQL", "MySQL", "Dashboard"],
-    image: projectPowerbi,
-    link: GITHUB,
-  },
-  {
-    title: "Student Performance Analysis",
-    period: "Aug 2025 — Dec 2025",
-    type: "Data Analysis",
-    description:
-      "Cleaned and analysed 500+ student records with Python (pandas). EDA surfaced patterns in attendance, grades and departmental performance.",
-    tags: ["Python", "pandas", "Excel", "EDA"],
-    image: projectPython,
-    link: GITHUB,
-  },
 ];
 
 const SERVICES = [
