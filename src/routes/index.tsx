@@ -339,9 +339,6 @@ function Skills() {
 
 /* -------------------- PROJECTS -------------------- */
 function Projects() {
-  const [filter, setFilter] = useState<"All" | "Data Analysis" | "BI Dashboard">("All");
-  const filtered = PROJECTS.filter((p) => filter === "All" || p.type === filter);
-
   return (
     <section id="projects" className="py-16">
       <div className="card-soft p-6 sm:p-10 relative overflow-hidden">
@@ -352,22 +349,7 @@ function Projects() {
           <h2 className="section-label relative text-center">/SELECTED WORK</h2>
         </div>
 
-        <div className="mt-10 flex flex-wrap items-center justify-between gap-3">
-          <div className="flex gap-2 font-mono text-sm">
-            {(["All", "Data Analysis", "BI Dashboard"] as const).map((f) => (
-              <button
-                key={f}
-                onClick={() => setFilter(f)}
-                className={`px-3 py-1.5 rounded-full transition-colors ${
-                  filter === f
-                    ? "bg-[color:var(--color-ink)] text-white"
-                    : "hover:bg-black/5"
-                }`}
-              >
-                {f}
-              </button>
-            ))}
-          </div>
+        <div className="mt-10 flex justify-end">
           <a
             href={GITHUB}
             target="_blank"
@@ -379,7 +361,7 @@ function Projects() {
         </div>
 
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          {filtered.map((p) => (
+          {PROJECTS.map((p) => (
             <a
               key={p.title}
               href={p.link}
