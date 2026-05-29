@@ -12,6 +12,7 @@ import {
 import cloudsBg from "@/assets/clouds-bg.jpg";
 import projectPowerbi from "@/assets/project-powerbi.jpg";
 import projectPython from "@/assets/project-python.jpg";
+import projectDarkStore from "@/assets/dark-store-dashboard.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -40,7 +41,7 @@ const LINKEDIN = "https://www.linkedin.com/in/yash-tyagi-91845337a";
 const GITHUB = "https://github.com/BotYash013";
 
 const NAV = [
-  { label: "Work", count: 2, href: "#projects" },
+  { label: "Work", count: 3, href: "#projects" },
   { label: "Skills", count: 5, href: "#skills" },
   { label: "Experience", count: 1, href: "#experience" },
   { label: "Contact", href: "#contact" },
@@ -66,7 +67,7 @@ const SKILLS: { category: string; items: string[] }[] = [
 type Project = {
   title: string;
   period: string;
-  type: "BI Dashboard" | "Data Analysis";
+  type: "BI Dashboard" | "Data Analysis" | "AI-Powered BI Dashboard";
   description: string;
   tags: string[];
   image: string;
@@ -74,6 +75,16 @@ type Project = {
 };
 
 const PROJECTS: Project[] = [
+  {
+    title: "AI-Powered Dark Store Demand Intelligence System",
+    period: "Apr 2026 — May 2026",
+    type: "AI-Powered BI Dashboard",
+    description:
+      "Analysed quick-commerce dark store operations using SQL and Power BI to surface demand patterns, stock availability issues and delivery inefficiencies, with AI-generated business recommendations.",
+    tags: ["SQL", "MySQL", "Power BI", "Excel", "ChatGPT"],
+    image: projectDarkStore,
+    link: "https://github.com/BotYash013/AI-Powered-Dark-Store-Demand-Intelligence-System",
+  },
   {
     title: "Sales Performance Dashboard",
     period: "Jan 2026 — Mar 2026",
