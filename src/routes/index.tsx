@@ -11,6 +11,7 @@ import {
 } from "lucide-react";
 import cloudsBg from "@/assets/clouds-bg.jpg";
 import projectDarkStore from "@/assets/dark-store-dashboard.png";
+import projectFutureProof from "@/assets/future-proof-ai.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -39,7 +40,7 @@ const LINKEDIN = "https://www.linkedin.com/in/yash-tyagi-91845337a";
 const GITHUB = "https://github.com/BotYash013";
 
 const NAV = [
-  { label: "Work", count: 1, href: "#projects" },
+  { label: "Work", count: 2, href: "#projects" },
   { label: "Skills", count: 5, href: "#skills" },
   { label: "Experience", count: 1, href: "#experience" },
   { label: "Contact", href: "#contact" },
@@ -65,7 +66,7 @@ const SKILLS: { category: string; items: string[] }[] = [
 type Project = {
   title: string;
   period: string;
-  type: "BI Dashboard" | "Data Analysis" | "AI-Powered BI Dashboard";
+  type: "BI Dashboard" | "Data Analysis" | "AI-Powered BI Dashboard" | "AI – Career Intelligence Platform";
   description: string;
   tags: string[];
   image: string;
@@ -82,6 +83,16 @@ const PROJECTS: Project[] = [
     tags: ["SQL", "MySQL", "Power BI", "Excel", "ChatGPT"],
     image: projectDarkStore,
     link: "https://github.com/BotYash013/AI-Powered-Dark-Store-Demand-Intelligence-System",
+  },
+  {
+    title: "Future Proof AI – Career Intelligence Platform",
+    period: "Apr 2026 — May 2026",
+    type: "AI – Career Intelligence Platform",
+    description:
+      "FutureProof AI is a data analytics project that identifies AI-proof careers, automation risks, salary trends and future job opportunities using SQL and Power BI.",
+    tags: ["Power BI", "SQL", "Excel", "GitHub"],
+    image: projectFutureProof,
+    link: "https://github.com/BotYash013/Future-Proof-AI-Career-Intelligence-Platform",
   },
 ];
 
