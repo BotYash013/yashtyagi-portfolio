@@ -254,7 +254,7 @@ function Hero() {
         <div className="mt-10 grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-end">
           <div className="lg:col-span-2">
             <div className="font-heading text-2xl sm:text-3xl font-bold">
-              Business Intelligence Developer & Data Analyst
+              Aspiring Data Analyst
             </div>
             <p className="mt-3 max-w-xl text-[color:var(--color-ink-soft)] text-base sm:text-lg">
               Turning raw data into decisions. Fresher with a passion for insight —
